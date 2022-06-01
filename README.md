@@ -126,3 +126,4 @@ $jobs -l
 |/usr/sbin/sshd|COMMAND|사용자가 실행한 명령 이름|
 
 ***
+# vim 에디터 - 매크로 사용방법
