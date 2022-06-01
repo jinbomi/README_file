@@ -9,3 +9,5 @@
 ##### top[옵션] 
 ##### 사용예시 : 옵션 없이 명령어를 실행하면 interval간격으로 화면을 갱신하며 정보를 보여줌.
 ##### 실행결과
+<img src ="https://user-images.githubusercontent.com/106435720/171386846-b3c72b00-70f3-4478-9eb8-abff81377d96.png" width = "680" height = "480">
+
