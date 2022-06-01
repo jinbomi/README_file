@@ -37,6 +37,14 @@
 ##### ps(process status)를 사용하면 현재 실행중인 프로세스 목록을 확인할 수 있습니다.
 #####실행결과
 <img src = "https://user-images.githubusercontent.com/106435720/171392311-4b8c1885-ce33-47dd-937a-5382325405ec.jpg" width = "300" height = "200">
+```
+$ps
+
+PID TTY TIME CND
+
+3134pts/1    00:00:00 bash
+15027 pts/1  00:00:00 ps
+```
 
 ##### 프로그램의 정보
 |[옵션]|설명|
