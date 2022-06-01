@@ -76,3 +76,8 @@
 |Running|작업이 일시 중단되지 않았고 종료하지 않고 계속 진행 중임을 뜻한다.|
 |Done   |작업이 완료되어 0을 반환하고 종료했음을 뜻한다.|
 |Done(code)|작업이 정상적으로 완료했으며, 0이 아닌 코드를 반환했음을 뜻한다.|
+|Stopped|작업이 일시 중단됨을 뜻한다.|
+|Stopped(SIGTSTP)|SIGTSTP 신호가 작업을 일시 중단했음을 뜻한다.|
+|Stopped(SIGSTOP)|SIGSTOP 신호가 일시 중단했음을 뜻한다.|
+|Stopped(SIGTTIN)|SIGTTIN 신호가 작업을 일시 중단했음을 뜻한다.|
+|Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단했음을 뜻한다.|
