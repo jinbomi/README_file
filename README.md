@@ -36,7 +36,7 @@
 + #### ps
 ##### ps(process status)를 사용하면 현재 실행중인 프로세스 목록을 확인할 수 있습니다.
 #####실행결과
-<img src = "https://user-images.githubusercontent.com/106435720/171392311-4b8c1885-ce33-47dd-937a-5382325405ec.jpg" width = "680" height = "480">
+<img src = "https://user-images.githubusercontent.com/106435720/171392311-4b8c1885-ce33-47dd-937a-5382325405ec.jpg" width = "300" height = "200">
 
 ##### 프로그램의 정보
 |[옵션]|설명|
@@ -62,8 +62,8 @@
 + #### jobs
 ##### jops는 작업이 중지된 상태, 백그라운드로 진행 중인 작업 상태, 변경 되었지만 보고되지 않은 상태 등을 표시하는 명령어다. 
 ##### 사용법 : jops[옵션] [job ID] , jobs-x command[args]
-<img src = "https://user-images.githubusercontent.com/106435720/171394629-4250e697-8cc6-4582-9c34-8453a48d5b61.jpg" width = "680" height = "480">
-<img src = "https://user-images.githubusercontent.com/106435720/171394673-2e170eca-4e2a-4f73-9682-cf341fe42642.jpg" width = "680" height = "480">
+<img src = "https://user-images.githubusercontent.com/106435720/171394629-4250e697-8cc6-4582-9c34-8453a48d5b61.jpg" width = "300" height = "200">
+<img src = "https://user-images.githubusercontent.com/106435720/171394673-2e170eca-4e2a-4f73-9682-cf341fe42642.jpg" width = "300" height = "200">
 
 1. -I : 프로세스 그룹 ID를 state필드 앞에 출력한다.
 2. -n : 프로세스 그룹 중에 대표 프로세스 ID를 출력한다.
@@ -81,3 +81,29 @@
 |Stopped(SIGSTOP)|SIGSTOP 신호가 일시 중단했음을 뜻한다.|
 |Stopped(SIGTTIN)|SIGTTIN 신호가 작업을 일시 중단했음을 뜻한다.|
 |Stopped(SIGTTOU)|SIGTTOU 신호가 작업을 일시 중단했음을 뜻한다.|
+
++ ##### KILL
+##### kill명령어는 프로세스에 종료 시그널을 보낸다. 
+##### 사용법 : kill[-s시그널][-a]pid, kill-l[시그널]
+<img src = "https://user-images.githubusercontent.com/106435720/171396601-7bc02129-72e3-46ab-9233-4d2e12737bd5.jpg" width = "300" height = "200">
+
+1. pid ··· : 종료시킬 프로세스 ID나 프로세스 이름을 지정한다.
+2. -s : 전달할 시그널의 종류를 지정한다. 여기에는 시그널 이름이나 번호를 써준다.
+3. -l : 시그널로 사용할 수 있는 시그널 이름들을 보여준다. 이것은 /usr/include/linux/signal.h 파일에서도 알 수 있다.
+4. -1, : -HUP 프로세스를 재활성화한다.
+5. -9 : 프로세스를 강제로 종료시킨다.
+
+##### 관련 명령어
+|Root|USER|프로세스의 사용자|
+|2518|PID|프로세스 ID|
+|0.0|%CPU|마지막 1분 동안 프로세스가 사용한 CPU 점유율|
+|0.1|%MEN|마지막 1분 동안 프로세스가 사용한 메모리의 점유율|
+|7084|VSZ|가상메모리에 있는 프로세스의 KB 단위 크기|
+|1076|RSS|프로세스의 실제 메모리의 크기로 KB 단위|
+|?|TTY|연결되어 있는 터미널|
+|Ss|STAT|실행되고 있는 프로세스 상태|
+|Jun07|START|프로세스가 시작된 날짜|
+|0:00|TIME|프로세스가 소비한 총 시간|
+|/usr/sbin/sshd|COMMAND|사용자가 실행한 명령 이름|
+
+***
