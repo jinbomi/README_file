@@ -36,7 +36,7 @@
 + #### ps
 ##### ps(process status)를 사용하면 현재 실행중인 프로세스 목록을 확인할 수 있습니다.
 #####실행결과
-<img src = "https://user-images.githubusercontent.com/106435720/171392311-4b8c1885-ce33-47dd-937a-5382325405ec.jpg" width = "300" height = "200">
+
 ```
 $ps
 
@@ -70,8 +70,17 @@ PID TTY TIME CND
 + #### jobs
 ##### jops는 작업이 중지된 상태, 백그라운드로 진행 중인 작업 상태, 변경 되었지만 보고되지 않은 상태 등을 표시하는 명령어다. 
 ##### 사용법 : jops[옵션] [job ID] , jobs-x command[args]
-<img src = "https://user-images.githubusercontent.com/106435720/171394629-4250e697-8cc6-4582-9c34-8453a48d5b61.jpg" width = "300" height = "200">
-<img src = "https://user-images.githubusercontent.com/106435720/171394673-2e170eca-4e2a-4f73-9682-cf341fe42642.jpg" width = "300" height = "200">
+
+```
+$jobs
+[1]- 정지됨          vi
+[2]+ 정지됨          tail -f /var/log/messages
+```
+```
+$jobs -l
+[1]- 4908 Stopped (tty output)       vi
+[2]+ 4987 Stopped                    tail -f /var/log/messages
+```
 
 1. -I : 프로세스 그룹 ID를 state필드 앞에 출력한다.
 2. -n : 프로세스 그룹 중에 대표 프로세스 ID를 출력한다.
